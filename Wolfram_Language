@@ -1,0 +1,54 @@
+Wolfram Language
+
+//#Wolfram Language 
+
+Graphics[{White, Riffle[NestList[Scale[Rotate[#,0.1], 0.9]&,
+ Rectangle[], 40],{Purple,Red}}}]
+
+ArrayPlot[CellularAutomation[{1635,{3,1}},
+ {{1}, 0}, 500], ColorFunction -> (Hue[.1 + .5#] &)]
+
+Grid@Partition[DeleteMissing[#["Image"] & /@
+ Take[= samueljackson[MovieAppearances"],24]], 6]
+
+Partition[Column[{#, DominantColors[#]}, Alignment -> Center] & /@
+(#["Image"] & /@ Take[= van gogh artwork, 9]), 3]
+
+GeoGraphics[{EdgeForm[Black], {GeoStyling[{"Image",#2}],
+ Polygon[#1]} &@@@ = african countries [{"Entity","Flag"}]},
+ GeoBackgrund -> White]
+
+Graphics[Table[Rotate[Text[Style[/[WolframLanguageLogo], 160,
+ FontFamily -> "Times"],{1, 1,5}], i 2 Pi/5, {0,0}], {i, 1, 5}]]
+
+c = EntityValue[CityData[{Large, "France"}], "Coordinates"];
+GeoGraphics[{Red, Thick, Line@[[Last[FindShortestTour[c]]]]}]
+
+c = =spock curve equation [t]; ParametricPlot[Evaluate[Sign[#]
+ Abs[#]^(2/3) &@c],{t, 0, 72 Pi}, MaxRecursion -> 6, PlotRange -> All]
+
+GeoRegionValuePlot[Entity["AdministrativeDivision",{_, "California",
+ "UnitedStates"}] -> "Population"]
+
+SmoothHistogram[Legend[First /@ StringPosition[
+ ExampleData@{"Text", "AliceInWonderland"},#],#],#] & /@
+ {"Alice", "Queen"}, Filling -> Axis]
+
+ParametricPlot3D[1.2^v {Cos[v] (1 + Cos[u]),
+ -Sin[v] (1 + Cos[u]), -2(1 + Sin[u])}, {u,0,2 Pi},{v, -15,6},
+ PlotRange -> All, PlotPoints -> 40]
+
+ContourPlot[Evaluate[Re[Product[x + | y - (a + | b), {a, -5,5},{b,-5,5}]]],
+ {x, -5,5},{y,-5,5},ColorFunction ->"SolarColors"]
+
+p = PixelValuePositions[Binarize[= stephen wolfram image , .4], 0];
+Graphics[Line[p[[FindShortestTour[p][[2]]]]]]
+
+Graphics3D[{Red, Specularity[White, 70], KnotData[{8,3}, "ImageData"]},
+ Boxed -> False, ViewPoint -> {0, 0.1, 5}]
+
+Graphics3D[{RGBColor[#/5, Opacity[.8], Cuboid[#,# + .8]} & /@
+ Tuples@Table[Range[5],{3}]]
+
+NestList[EdgeDetect, BarcodeImage[
+ "http://wolframtap.tumblr.com","QR"],3] 
