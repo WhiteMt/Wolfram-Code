@@ -1,5 +1,3 @@
-Wolfram Language
-
 //#Wolfram Language 
 
 Graphics[{White, Riffle[NestList[Scale[Rotate[#,0.1], 0.9]&,
